@@ -52,7 +52,6 @@ const versions = computed(() => {
           max-h="60"
           z="100"
           overflow="auto"
-
           border="1 dark:dark-900 light-900 rounded-b"
         >
           <div
