@@ -36,7 +36,8 @@ html.dark {
   padding: 1rem;
 } 
 
-.editor-windicss-color-block {
+// TODO: remove
+/* .editor-windicss-color-block {
   width: 0.8em;
   height: 0.8em;
   content: '';
@@ -51,7 +52,7 @@ html.dark {
 
 .editor-windicss-color-block-dark {
   border: 1px solid #eeeeee;
-}
+} */
 
 .editors-height {
   height: calc(100% - 2rem);

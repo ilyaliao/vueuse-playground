@@ -73,16 +73,11 @@ const activeTab = ref('packages')
               <mdi-package-variant-closed />
               <span>Install</span>
             </SettingsTab>
-            <!-- <SettingsTab :active="activeTab === 'windicss'" @click="activeTab = 'windicss'">
-              <mdi-tailwind />
-              <span>WindiCSS</span>
-            </SettingsTab> -->
           </div>
           <div grid="col-span-3" overflow="auto">
             <EditorSettings v-if="activeTab === 'editor'" />
             <InstallSettings v-else-if="activeTab === 'install'" />
             <PackagesSettings v-else-if="activeTab === 'packages'" />
-            <WindiCSSSettings v-else-if="activeTab === 'windicss'" />
           </div>
         </div>
       </div>

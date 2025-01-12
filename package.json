@@ -51,8 +51,6 @@
     "vite-plugin-components": "^0.10.2",
     "vite-plugin-icons": "^0.5.1",
     "vite-plugin-pwa": "^0.7.3",
-    "vite-plugin-windicss": "^0.16.7",
-    "vue-tsc": "^0.0.24",
-    "windicss": "^3.0.12"
+    "vue-tsc": "^0.0.24"
   }
 }

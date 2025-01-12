@@ -18,7 +18,6 @@ declare module 'vue' {
     PackagesSettings: typeof import('./src/components/settings/PackagesSettings.vue')['default']
     Settings: typeof import('./src/components/settings/Settings.vue')['default']
     SettingsTab: typeof import('./src/components/settings/SettingsTab.vue')['default']
-    WindiCSSSettings: typeof import('./src/components/settings/WindiCSSSettings.vue')['default']
     Button: typeof import('./src/components/ui/Button.vue')['default']
     Container: typeof import('./src/components/ui/Container.vue')['default']
     Navigation: typeof import('./src/components/ui/Navigation.vue')['default']

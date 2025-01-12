@@ -28,7 +28,7 @@ useEventListener('keydown', (ev) => {
     w="18"
     flex="~ col"
     items="center"
-    spcae="y-2"
+    space="y-2"
   >
     <img src="/vueuse.svg" class="w-12" />
     <span class="flex-1"></span>

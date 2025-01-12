@@ -2,7 +2,6 @@ import { SFCDescriptor, BindingMetadata } from '@vue/compiler-sfc'
 import * as defaultCompiler from '@vue/compiler-sfc'
 import { ref } from 'vue'
 import { orchestrator as store, OrchestratorFile as File } from '../orchestrator'
-import { generateStyles } from './windi'
 
 export const MAIN_FILE = 'App.vue'
 export const COMP_IDENTIFIER = '__sfc__'
@@ -141,9 +140,10 @@ export async function compileFile({ filename, code, compiled }: File) {
   // styles
   let css = ''
 
+  // TODO: remove
   // Compile windicss styles
-  if (descriptor.template && descriptor.template.content)
-    css = generateStyles(descriptor.template.content)
+  // if (descriptor.template && descriptor.template.content)
+    // css = generateStyles(descriptor.template.content)
 
   for (const style of descriptor.styles) {
     if (style.module) {
