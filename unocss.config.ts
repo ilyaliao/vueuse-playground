@@ -5,6 +5,8 @@ import {
     presetUno,
     presetTypography,
     presetWebFonts,
+    transformerDirectives,
+    transformerVariantGroup,
   } from 'unocss'
   
   export default defineConfig({
@@ -22,5 +24,9 @@ import {
           roboto: 'Roboto',
         },
       }),
+    ],
+    transformers: [
+      transformerDirectives(),
+      transformerVariantGroup(),
     ],
   })
