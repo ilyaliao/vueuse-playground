@@ -24,11 +24,11 @@ const remove = () => {
     bg="hover:(light-800 dark:dark-600)"
     text="sm"
     h="8"
-    display="inline-flex"
     flex="row"
     place="items-center"
     space="x-2"
     border="r-1 light-900 dark:dark-400"
+    inline-flex="~ items-center"
     @click="setActiveFile(name)"
   >
     <logos-vue />
