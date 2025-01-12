@@ -1,7 +1,7 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import WindiCSS from 'vite-plugin-windicss'
+import UnoCSS from 'unocss/vite'
 import ViteComponents, { HeadlessUiResolver } from 'vite-plugin-components'
 import Icons, { ViteIconsResolver } from 'vite-plugin-icons'
 import { copyVuePlugin } from './plugins/copy-vue'
@@ -24,11 +24,7 @@ export default defineConfig({
   plugins: [
     vue(),
     copyVuePlugin(),
-    WindiCSS({
-      scan: {
-        include: ['src/**/*.{vue,html,jsx,tsx}', 'index.html'],
-      },
-    }),
+    UnoCSS(),
     ViteComponents({
       globalComponentsDeclaration: true,
       customComponentResolvers: [
