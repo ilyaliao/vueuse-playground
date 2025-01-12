@@ -8,7 +8,7 @@ defineProps<{ title: string; noOverflow?: boolean; noRounding?: boolean }>()
     grid="~"
     border="1 light-900 dark:dark-400"
     shadow="lg"
-    class="grid-rows-[min-content,auto]"
+    class="grid-rows-[min-content_auto]"
     :class="noRounding ? 'border-t-0' : 'rounded-md'"
   >
     <div
