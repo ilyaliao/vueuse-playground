@@ -18,7 +18,7 @@ const remove = () => {
 
 <template>
   <div
-    :class="{ '!pr-4': name === 'App.vue', 'dark:bg-dark-600 light-800': isActive }"
+    :class="{ '!pr-4': name === 'App.vue', 'dark:bg-dark-600 text-light-800': isActive }"
     p="l-4 r-2"
     cursor="pointer"
     bg="hover:(light-800 dark:dark-600)"
