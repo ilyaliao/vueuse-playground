@@ -200,4 +200,8 @@ iframe {
   height: 100%;
   border: none;
 }
+
+.splitpanes--dragging iframe {
+  pointer-events: none;
+}
 </style>
